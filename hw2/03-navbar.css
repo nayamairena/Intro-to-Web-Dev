@@ -1,12 +1,30 @@
 body {
   margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
-.nav-list {
+.nav-list ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  
 }
 
-.list-item {
+.list-item li{
+  float: left;
 }
 
-.nav-link {
+.nav-link a{
+  background-color: var(--green);
+  color: var(--white);
+  display: block;
+  text-decoration: none;
+  padding: 25px 25px;
+}
+
+.nav-link a:hover{
+  background-color: var(--orange);
+  color: var(--black)
 }

@@ -1,11 +1,36 @@
 .container {
   width: 300px;
+  border-style: solid;
+  border-radius: 8px;
+  border-width: 2px;
+  border-color: var(--navy);
+  text-align: center;
+  padding: 20px;
+}
+
+.container h1{
+  color: var(--navy);
+  font-size: 30px;
+}
+
+.container p{
+  text-align: left;
+  font-size: 16px;
 }
 
 .image {
   width: 100%;
 }
 
-.btn {
+.btn button{
   width: 100%;
+  background-color: var(--navy);
+  color: var(--white);
+  padding: 10px;
 }
+
+.btn button:hover{
+  background-color: var(--orange);
+  color: var(--black)
+}
+

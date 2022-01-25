@@ -1,14 +1,37 @@
 .form {
+  display: inline-block;
+  margin: 0 auto;
+  border-style: solid;
+  text-align: center;
+  border-radius: 8px;
+  border-width: 2px;
 }
 
 .form-element {
+  text-align: center;
 }
 
 .btn {
+  margin: 0 auto;
+  display: inline;
 }
 
-.btn-primary {
+.btn-primary input {
+  float: left;
+  width: 130px;
+  height: 30px;
+  background-color: var(--green);
+  color: var(--white);
+  border-radius: 4px;
+  border: 1px solid var(--green);
 }
 
-.btn-secondary {
+.btn-secondary input {
+  float: left;
+  width: 130px;
+  height: 30px;
+  background-color: var(--white);
+  color: var(--green);
+  border-radius: 4px;
+  border: 1px solid var(--green);
 }

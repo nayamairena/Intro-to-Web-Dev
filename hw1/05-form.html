@@ -5,46 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>05 - Form</title>
-    <!-- <link rel="stylesheet" href="../styles.css" />
-    <link rel="stylesheet" href="../hw2/05-form.css" /> -->
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../hw2/05-form.css" />
   </head>
   <body>
     <main>
-      <form action="">
-        <h1>Registration Form</h1>
-        <div>
-          <label for="username">Username: </label>
-          <input type="text" name="username" id="username" />
-        </div>
-        <br />
-        <div>
-          <label for="email">Email: </label>
-          <input type="text" name="email" id="email" />
-        </div>
-        <br />
-        <div>
-          <label for="password">Password: </label>
-          <input type="text" name="password" id="password" />
-        </div>
-        <br />
-        <fieldset>
-          <legend>Would you like to sign up for the newsletter?</legend>
-          <input type="radio" name="select" id="yes" />
-          <label for="yes">Yes, sign me up</label>
-          <input type="radio" name="select" id="no" />
-          <label for="no">No, thank you</label>
-        </fieldset>
-        <br />
-        <div>
-          <label for="date">Date: </label>
-          <input type="date" name="date" id="date" />
-        </div>
-        <br />
-        <div>
-          <input type="submit" value="Submit" />
-          <input type="reset" value="Reset" />
-        </div>
-      </form>
+      <div class="form">
+        <form action="">
+          <div class="form-element">
+            <h1>Registration Form</h1>
+            <div>
+              <label for="username">Username: </label>
+              <input type="text" name="username" id="username" />
+            </div>
+            <br />
+            <div>
+              <label for="email">Email: </label>
+              <input type="text" name="email" id="email" />
+            </div>
+            <br />
+            <div>
+              <label for="password">Password: </label>
+              <input type="password" name="password" id="password" />
+            </div>
+            <br />
+            <fieldset>
+              <legend>Would you like to sign up for the newsletter?</legend>
+              <input type="radio" name="select" id="yes" />
+              <label for="yes">Yes, sign me up</label>
+              <input type="radio" name="select" id="no" />
+              <label for="no">No, thank you</label>
+            </fieldset>
+            <br />
+            <div>
+              <label for="date">Date: </label>
+              <input type="date" name="date" id="date" />
+            </div>
+            <br />
+            <div class="btn">
+              <div class="btn-primary">
+                <input type="submit" value="Submit" />
+              </div>
+              <div class="btn-secondary">
+                <input type="reset" value="Reset" />
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
     </main>
   </body>
 </html>

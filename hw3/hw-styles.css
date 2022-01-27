@@ -1,11 +1,12 @@
 h1 {
   text-align: center;
 }
-
+.flex-container {
+  display: flex;
+}
 /* Code for exercise 01-flex */
 
 .flex-container-1 {
-  display: flex;
   flex-flow: row wrap-reverse;
   justify-content: flex-end;
 }
@@ -22,6 +23,8 @@ h1 {
 
 .flex-container-2 {
   height: 400px;
+  flex-flow: column-reverse wrap;
+  align-content: space-evenly;
 }
 
 /* Code for exercise 03-grid */

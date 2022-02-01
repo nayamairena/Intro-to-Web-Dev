@@ -67,6 +67,7 @@ h1 {
   grid-row: 7 / span 2;
 }
 
+/* Code for exercise 04-grid */
 .grid-container-2 .item1 {
   grid-area: header;
 }
@@ -86,9 +87,8 @@ h1 {
   grid-area: footer;
 }
 
-/* Code for exercise 04-grid */
 @media (min-width: 0) and (max-width: 767px) {
-  /*414*/
+  /*I did this range so that it includes everything inbetween 414px and 768px*/
   .grid-container-2 {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(8, 1fr);
@@ -102,26 +102,6 @@ h1 {
       "card2"
       "footer";
   }
-  /*
-  .grid-container-2 .item1 {
-    grid-area: header;
-  }
-  .grid-container-2 .item2 {
-    grid-area: jumbotron;
-  }
-  .grid-container-2 .item3 {
-    grid-area: card1;
-  }
-  .grid-container-2 .item4 {
-    grid-area: card2;
-  }
-  .grid-container-2 .item6 {
-    grid-area: section;
-  }
-  .grid-container-2 .item7 {
-    grid-area: footer;
-  }
-  */
   .grid-container-2 .item5 {
     display: none;
   }
@@ -140,26 +120,6 @@ h1 {
       "card1 card2"
       "footer footer";
   }
-  /*
-  .grid-container-2 .item1 {
-    grid-area: header;
-  }
-  .grid-container-2 .item2 {
-    grid-area: jumbotron;
-  }
-  .grid-container-2 .item3 {
-    grid-area: card1;
-  }
-  .grid-container-2 .item4 {
-    grid-area: card2;
-  }
-  .grid-container-2 .item6 {
-    grid-area: section;
-  }
-  .grid-container-2 .item7 {
-    grid-area: footer;
-  }
-  */
   .grid-container-2 .item5 {
     display: none;
   }
@@ -179,25 +139,6 @@ h1 {
       "section section section"
       "footer footer footer";
   }
-  /*
-  .grid-container-2 .item1 {
-    grid-area: header;
-  }
-  .grid-container-2 .item2 {
-    grid-area: jumbotron;
-  }
-  .grid-container-2 .item3 {
-    grid-area: card1;
-  }
-  .grid-container-2 .item4 {
-    grid-area: card2;
-  }
-  .grid-container-2 .item6 {
-    grid-area: section;
-  }
-  .grid-container-2 .item7 {
-    grid-area: footer;
-  }*/
   .grid-container-2 .item5 {
     grid-area: card3;
   }

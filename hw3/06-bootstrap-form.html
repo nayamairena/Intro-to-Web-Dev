@@ -13,9 +13,79 @@
     <link rel="stylesheet" href="hw-styles.css" />
   </head>
   <body>
-    <main>
-      <form>
-        <h1>Contact Form</h1>
+    <main class="container mt-5">
+      <form class="bg-light border rounded mx-auto p-3">
+        <h1 class="p-4">CONTACT FORM</h1>
+
+        <div class="form-group mb-3 row">
+          <label class="col-sm-2 col-form-label me-sm-3" for="username"
+            >Username:
+          </label>
+          <div class="col-sm-8 ms-sm-5">
+            <input type="text" class="form-control" id="username" />
+          </div>
+        </div>
+
+        <div class="form-group mb-3 row">
+          <label class="col-sm-2 col-form-label me-sm-3" for="email"
+            >Email:
+          </label>
+          <div class="col-sm-8 ms-sm-5">
+            <input type="email" class="form-control" id="email" />
+          </div>
+        </div>
+        <div class="form-group mb-3 row">
+          <label class="col-sm-2 col-form-label me-sm-3" for="password"
+            >Password:
+          </label>
+          <div class="col-sm-8 ms-sm-5">
+            <input type="password" class="form-control" id="password" />
+          </div>
+        </div>
+
+        <p class="mt-2">Would you like to sign up for the newsletter?</p>
+        <input
+          class="form-check-input"
+          type="radio"
+          name="flexRadioDefault"
+          id="yes"
+        />
+        <label class="form-check-label" for="yes">Yes, sign me up.</label>
+
+        <div class="form-check mb-2">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="flexRadioDefault"
+            id="no"
+          />
+          <label class="form-check-label" for="no">No, Thank you.</label>
+        </div>
+        <div class="row mb-3">
+          <label class="col-sm-2 col-form-label me-sm-3" for="date"
+            >Date:
+          </label>
+          <div class="col-sm-8 ms-sm-5">
+            <input
+              type="date"
+              class="form-control mb-3"
+              name="date"
+              id="date"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <input
+            class="btn btn-primary col mx-1"
+            type="submit"
+            value="Submit"
+          />
+          <input
+            class="btn btn-secondary col mx-1"
+            type="reset"
+            value="Reset"
+          />
+        </div>
       </form>
     </main>
   </body>

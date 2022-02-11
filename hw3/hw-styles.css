@@ -151,24 +151,20 @@ h1 {
   padding: 10px;
 }
 
-.row1 > * {
+.bootstrap-grid .row:nth-child(1) > * {
   background-color: var(--purple);
 }
 
-.row2 > * {
+.bootstrap-grid .row:nth-child(2) > * {
   background-color: var(--navy);
 }
 
-.row3 > * {
+.bootstrap-grid .row:nth-child(3) > * {
   background-color: var(--teal);
 }
 
-.row4 > * {
+.bootstrap-grid .row:nth-child(4) > * {
   background-color: var(--green);
 }
 
 /* Code for exercise 06-bootstrap-form */
-
-form {
-  width: 400px;
-}

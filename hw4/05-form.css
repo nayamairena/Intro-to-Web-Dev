@@ -4,6 +4,11 @@ fieldset{
   padding: 0;
 }
 
+input{
+  border: 1px solid var(--gray4);
+  font-size: 1.1rem;
+}
+
 .form{
   margin: 40px auto;
   border: 1px solid var(--gray4);
@@ -16,9 +21,33 @@ fieldset{
   margin-bottom: 2rem;
 }
 
+.input-element{
+  display: block;
+  width: 70%;
+  float: right;
+}
+
 .title{
   text-align: center;
   text-transform: uppercase;
+}
+
+.radios{
+  margin-bottom: 5rem;
+}
+
+.radios > label{
+  display: inline-block;
+  width: 90%;
+}
+
+.radios > input{
+  display: inline-block;
+  width: 5%;
+}
+
+.input-label, legend{
+  font-weight: 600;
 }
 
 .form-element fieldset {

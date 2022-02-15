@@ -14,16 +14,23 @@ const deleteItem = (item) => {
 
 const lookupItem = (index) => {
   // return the item from result at index, deleting the obtained item
-
-  result.splice(index, 1);
-  return index;
+  if(index >= 0){
+    const item = result[index];
+    deleteItem(item);
+    return item;
+  }
+  return null;
 };
 
 const printItems = () => {
   // return a string of the concatenated item in result, separated by commas
-  
-  //console.log(result.toString());
-  return result;
+  let print = '';
+
+  for(let i = 0; i < (result.length)-1; i++){
+      print += String(result[i])+',';  
+  }
+  print += String(result[result.length-1]);
+  return print;
 };
 
 insertItem(1);

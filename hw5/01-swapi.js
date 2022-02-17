@@ -147,19 +147,26 @@ const mapStarships = (input) => {
   // Return an array with the name, manufacturer, and cost (if not unknown) of each ship
   // Format: "Star Destroyer, manufactured by Kuat Drive Yards - cost: 150,000,000 credits"
 
-  return 'mapStarships';
+  const nmcStarships = input.map((item) => `${item.name}, manufactured by ${item.manufacturer} - cost:${item.cost_in_credits} credits.`);
+
+  return nmcStarships;
 };
 
 const filterStarships = (input) => {
   // Return an array with all ships that have less than 10 passengers with more than one crew member
 
-  return 'filterStarships';
+  const tenStarships = input.filter((item) => item.passengers < 10 && item.crew > 1);
+
+  return tenStarships;
 };
 
 const reduceStarships = (input) => {
   // Return the cost to purchase all ships in the input array
+  const temp = input.filter((item) => item.cost_in_credits !== 'unknown');
 
-  return `reduceStarships `;
+  const sum = temp.reduce((acc, curr) => Number(acc) + Number(curr.cost_in_credits), 0);
+
+  return sum.toLocaleString();
 };
 
 console.log(mapStarships(starships));

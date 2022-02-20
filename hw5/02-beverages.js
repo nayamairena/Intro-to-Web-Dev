@@ -1,14 +1,13 @@
 const url =
-  'https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Non_Alcoholic';
+  "https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Non_Alcoholic";
 
-let app = document.querySelector('#results');
-
+let app = document.querySelector("#results");
 
 const addDrinkToDOM = (drink) => {
-  let element = document.createElement('div');
-  element.setAttribute('class', 'figure');
-  let pic = document.createElement('img');
-  let name = document.createElement('h1');
+  let element = document.createElement("div");
+  element.setAttribute("class", "figure");
+  let pic = document.createElement("img");
+  let name = document.createElement("h1");
 
   pic.src = drink.strDrinkThumb;
   name.textContent = drink.strDrink;
@@ -22,7 +21,6 @@ const addDrinkToDOM = (drink) => {
   name.style.margin = "20px 10px 20px 23px";
   name.style.fontSize = "1.5em";
   name.style.width = "200px";
- 
 
   pic.style.width = "250px";
   pic.style.height = "250px";
@@ -31,32 +29,30 @@ const addDrinkToDOM = (drink) => {
   element.append(name);
 
   app.append(element);
-}
+};
 
 const fetchData = async (url) => {
   // Add your code here
-  try{
+  try {
     const response = await fetch(url);
     const data = await response.json();
-    console.log('Fetch all drinks');
+    console.log("Fetch all drinks");
     console.log(data);
 
     data.drinks.forEach((item) => {
       addDrinkToDOM(item);
     });
     console.groupEnd();
-  }catch (error){
-    console.error('Request failed', error);
+  } catch (error) {
+    console.error("Request failed", error);
 
-    let element = document.createElement('div');
-    element.textContent = 'An error occured. Please reload the page.';
+    let element = document.createElement("div");
+    element.textContent = "An error occured. Please reload the page.";
     app.append(element);
-
-  }finally{
-    let loader = document.querySelector('#loading');
+  } finally {
+    let loader = document.querySelector("#loading");
     app.removeChild(loader);
   }
-
 };
 
 fetchData(url);

@@ -3,6 +3,7 @@ const url =
 
 let app = document.querySelector('#results');
 
+
 const addDrinkToDOM = (drink) => {
   let element = document.createElement('div');
   let name = document.createElement('p');
@@ -17,27 +18,20 @@ const addDrinkToDOM = (drink) => {
   app.append(element);
 }
 
-const fetchData = (url) => {
+const fetchData = async (url) => {
   // Add your code here
+  try{
+    const response = await fetch(url);
+    const data = await response.json();
+    console.log('Fetch all drinks');
 
-  fetch(url)
-    .then((response) => response.json())
-    .then((data) => {
-      console.log(data);
-
-      var tmp = Object.entries(data);
-      console.log(typeof(tmp));
-      tmp.forEach((array) => {
-        array[1].forEach((drink) => {
-        console.log(drink.strDrink, drink.strDrinkThumb);
-        addDrinkToDOM(drink);
-        });
-      });
-    })
-
-  .catch((error) => console.log(error));
-
-
+    data.drinks.forEach((item) => {
+      addDrinkToDOM(item);
+    });
+    console.groupEnd();
+  }catch (error){
+    console.error('Request failed', error);
+  }
 };
 
 fetchData(url);

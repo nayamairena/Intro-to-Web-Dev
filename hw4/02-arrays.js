@@ -8,13 +8,16 @@ const insertItem = (item) => {
 
 const deleteItem = (item) => {
   // remove the first occurrence of item in result
-  result.splice(result.indexOf(item), 1);
-  return item;
+  if (indexOf(item) < 0) return null;
+  else {
+    result.splice(result.indexOf(item), 1);
+    return item;
+  }
 };
 
 const lookupItem = (index) => {
   // return the item from result at index, deleting the obtained item
-  if(index >= 0){
+  if (index >= 0) {
     const item = result[index];
     deleteItem(item);
     return item;
@@ -24,12 +27,12 @@ const lookupItem = (index) => {
 
 const printItems = () => {
   // return a string of the concatenated item in result, separated by commas
-  let print = '';
+  let print = "";
 
-  for(let i = 0; i < (result.length)-1; i++){
-      print += String(result[i])+',';  
+  for (let i = 0; i < result.length - 1; i++) {
+    print += String(result[i]) + ",";
   }
-  print += String(result[result.length-1]);
+  print += String(result[result.length - 1]);
   return print;
 };
 

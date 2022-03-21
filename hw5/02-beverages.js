@@ -22,6 +22,7 @@ const addDrinkToDOM = (drink) => {
   name.style.fontSize = "1.5em";
   name.style.width = "200px";
 
+  pic.alt = "Image of drink";
   pic.style.width = "250px";
   pic.style.height = "250px";
 

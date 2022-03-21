@@ -17,6 +17,7 @@ $(document).ready(function () {
             $("<img src =" + drink.strDrinkThumb + ">").css({
               width: "250px",
               height: "250px",
+              alt: "Image of drinks",
             })
           )
           .append(

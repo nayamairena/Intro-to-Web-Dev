@@ -159,11 +159,11 @@ h1 {
   background-color: var(--navy);
 }
 
-.bootstrap-grid .row:nth-child(3) > * {
+.bootstrap-grid .row:nth-child(2) > * {
   background-color: var(--teal);
 }
 
-.bootstrap-grid .row:nth-child(4) > * {
+.bootstrap-grid .row:nth-child(3) > * {
   background-color: var(--green);
 }
 

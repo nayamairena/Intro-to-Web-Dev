@@ -14,40 +14,40 @@
         <form action="">
           <div class="form-element">
             <h1>Registration Form</h1>
-            <div>
+            <div class="name">
               <label for="username">Username: </label>
               <input type="text" name="username" id="username" />
             </div>
             <br />
-            <div>
+            <div class="email">
               <label for="email">Email: </label>
-              <input type="email" name="email" id="email" />
+              <input type="text" name="email" id="email" />
             </div>
             <br />
-            <div>
+            <div class="password">
               <label for="password">Password: </label>
               <input type="password" name="password" id="password" />
             </div>
             <br />
-            <fieldset>
+            <div class="radios">
               <legend>Would you like to sign up for the newsletter?</legend>
               <input type="radio" name="select" id="yes" />
               <label for="yes">Yes, sign me up</label>
               <input type="radio" name="select" id="no" />
               <label for="no">No, thank you</label>
-            </fieldset>
+            </div>
             <br />
-            <div>
+            <div class="date">
               <label for="date">Date: </label>
               <input type="date" name="date" id="date" />
             </div>
             <br />
             <div class="btn">
-              <div class="btn-primary">
-                <input type="submit" value="Submit" />
-              </div>
-              <div class="btn-secondary">
-                <input type="reset" value="Reset" />
+     
+                <input type="submit" value="Submit" id="submit" />
+             
+         
+                <input type="reset" value="Reset" id="reset" />
               </div>
             </div>
           </div>

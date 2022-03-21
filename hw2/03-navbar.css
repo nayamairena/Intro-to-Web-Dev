@@ -4,27 +4,23 @@ body {
   text-align: center;
 }
 
-.nav-list ul{
+ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  
 }
 
-.list-item li{
-  float: left;
-}
-
-.nav-link a{
+a {
   background-color: var(--green);
   color: var(--white);
   display: block;
   text-decoration: none;
   padding: 25px 25px;
+  float: left;
 }
 
-.nav-link a:hover{
+a:hover {
   background-color: var(--orange);
-  color: var(--black)
+  color: var(--black);
 }
